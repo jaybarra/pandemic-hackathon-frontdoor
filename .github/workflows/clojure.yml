@@ -9,11 +9,14 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-late
+     
     steps:
     - uses: actions/checkout@v2
+
     - name: Install dependencies
       run: lein deps
+      working-directory: ./front-door
     - name: Run tests
       run: lein test
+      working-directory: ./front-door
