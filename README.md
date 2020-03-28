@@ -1,6 +1,10 @@
 # pandemic-hackathon-frontdoor
 A self-guided frontdoor concierge to walk different people through an admissions process, both for first responders and self-service
 
+## Status
+
+![Clojure CI](https://github.com/jaybarra/pandemic-hackathon-frontdoor/workflows/Clojure%20CI/badge.svg?branch=master)
+
 ## Problem
 
 _Digital Front Doors_
