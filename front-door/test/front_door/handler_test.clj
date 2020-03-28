@@ -12,10 +12,7 @@
     (let [response (app (mock/request :get "/invalid"))]
       (is (= 404 (:status response))))))
 
-
-;; (deftest enrollment-tests
-;;   (testing "start admission"
-;;     (let [context
-;;           response (app (-> (mock/request :post "/enroll")
-;;                             (mock/json-body {:foo "bar"})))]
-;;       (is (= 200 (:status response))))))
+(deftest enrollment-test
+  (testing "/enroll accepts POST"
+    (let [response (app (mock/request :post "/enroll"))]
+      (is (= 200 (:status response))))))

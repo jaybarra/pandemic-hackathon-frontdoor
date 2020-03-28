@@ -32,5 +32,5 @@
    header-links
    [:h1 "Enroll"]
    [:form {:action "/enroll" :method "POST"}
-    [:a {:href "/enroll"} "Enroll"]
-    " ]"]))
+    (util/anti-forgery-field)
+    [:a {:href "/enroll"} "Enroll"]]))
